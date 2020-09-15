@@ -1,4 +1,4 @@
-## To Do List App
+## Chuck Norris Jokes Generator
 
 Sample application written with Spring Boot & API to generate random "jokes".
 
@@ -12,7 +12,7 @@ Sample application written with Spring Boot & API to generate random "jokes".
 
 ## Sample usage
 
-![](https://github.com/konopkagrzegorz/ToDoList/blob/master/chucknorrisjokesgenerator.gif)
+![](https://github.com/konopkagrzegorz/joke-app/blob/master/chucknorrisjokesgenerator.gif)
 
 ## Authors
 
