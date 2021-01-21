@@ -45,13 +45,12 @@
 
     <distributionManagement>
         <repository>
-            <uniqueVersion>false</uniqueVersion>
-            <id>chuck-norris-jokes-generator</id>
-            <name>Grzegorz Repository</name>
-            <url>file:///home/myfolder/.m2</url>
-            <layout>default</layout>
+            <id>chuck-norris-joke-app</id>
+            <name>chuck-norris</name>
+            <url>file:E:/mvnrepos</url>
         </repository>
     </distributionManagement>
+
 
     <build>
         <plugins>
