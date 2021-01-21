@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
+        <version>2.4.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>guru.springframework</groupId>
@@ -13,12 +13,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>joke-app</name>
     <description>Chuck Norris Jokes Generator</description>
-
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -47,32 +44,32 @@
             <version>0.0.2</version>
         </dependency>
     </dependencies>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
 
-    <distributionManagement>
-        <repository>
-            <id>chuck-norris-joke-app</id>
-            <name>chuck-norris</name>
-            <url>file:E:/mvnrepos</url>
-        </repository>
-    </distributionManagement>
-
-
+<!--            <id>chuck-norris-joke-app</id>-->
+<!--            <name>chuck-norris</name>-->
+<!--            <url>file:E:/mvnrepos</url>-->
+<!--        </repository>-->
+<!--    </distributionManagement>-->
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>guru.springframework.jokeapp.JokeAppApplication</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <target>1.8</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>
